@@ -49,6 +49,7 @@ class model(nn.Module):
 
 if __name__ == '__main__':
     m = model().cuda()
+    # face -> x,y,z    left,right -> gaze direction
     '''feature = {"face":torch.zeros(10, 3, 224, 224).cuda(),
                 "left":torch.zeros(10,1, 36,60).cuda(),
                 "right":torch.zeros(10,1, 36,60).cuda()
